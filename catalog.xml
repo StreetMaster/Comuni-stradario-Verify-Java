@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smws/verify?wsdl" uri="xml-resources/web-service-references/verify/wsdl/ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smws/verify.wsdl"/>
+    <system systemId="http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com:80/smws/verify?xsd=1" uri="xml-resources/web-service-references/verify/wsdl/ec2-46-137-97-173.eu-west-1.compute.amazonaws.com_80/smws/verify.xsd_1.xsd"/>
+</catalog>

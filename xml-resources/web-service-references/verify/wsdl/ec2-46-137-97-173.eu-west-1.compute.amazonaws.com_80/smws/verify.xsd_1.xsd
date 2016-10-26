@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.6-1b01  svn-revision#13094. --><xs:schema xmlns:tns="http://verifyWS.streetmaster/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://verifyWS.streetmaster/">
+
+<xs:element name="Verify" type="tns:Verify"/>
+
+<xs:element name="VerifyResponse" type="tns:VerifyResponse"/>
+
+<xs:complexType name="Verify">
+<xs:sequence>
+<xs:element name="inVerify" type="tns:inputCommon" minOccurs="0"/>
+<xs:element name="key" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="inputCommon">
+<xs:sequence>
+<xs:element name="cap" type="xs:string" minOccurs="0"/>
+<xs:element name="civico" type="xs:string" minOccurs="0"/>
+<xs:element name="dug" type="xs:string" minOccurs="0"/>
+<xs:element name="indirizzo" type="xs:string" minOccurs="0"/>
+<xs:element name="localita" type="xs:string" minOccurs="0"/>
+<xs:element name="localita2" type="xs:string" minOccurs="0"/>
+<xs:element name="provincia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VerifyResponse">
+<xs:sequence>
+<xs:element name="TotOutVerify" type="tns:totOutVerify" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="totOutVerify">
+<xs:sequence>
+<xs:element name="codErr" type="xs:int"/>
+<xs:element name="norm" type="xs:int"/>
+<xs:element name="numCand" type="xs:int"/>
+<xs:element name="outItem" type="tns:outVerify" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="outVerify">
+<xs:sequence>
+<xs:element name="alter" type="tns:infoAlter" minOccurs="0"/>
+<xs:element name="cap" type="xs:string" minOccurs="0"/>
+<xs:element name="comune" type="xs:string" minOccurs="0"/>
+<xs:element name="detail" type="tns:infoDetailVerify" minOccurs="0"/>
+<xs:element name="frazione" type="xs:string" minOccurs="0"/>
+<xs:element name="indirizzo" type="xs:string" minOccurs="0"/>
+<xs:element name="provincia" type="xs:string" minOccurs="0"/>
+<xs:element name="scoreComune" type="xs:int"/>
+<xs:element name="scoreStrada" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="infoAlter">
+<xs:sequence>
+<xs:element name="cap" type="xs:int"/>
+<xs:element name="comune" type="xs:int"/>
+<xs:element name="dug" type="xs:int"/>
+<xs:element name="frazione" type="xs:int"/>
+<xs:element name="provincia" type="xs:int"/>
+<xs:element name="via" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="infoDetailVerify">
+<xs:sequence>
+<xs:element name="civico" type="xs:string" minOccurs="0"/>
+<xs:element name="codComune" type="xs:int"/>
+<xs:element name="codStrada" type="xs:int"/>
+<xs:element name="comuneMultiCap" type="xs:string" minOccurs="0"/>
+<xs:element name="dug" type="xs:string" minOccurs="0"/>
+<xs:element name="provEstesa" type="xs:string" minOccurs="0"/>
+<xs:element name="regione" type="xs:string" minOccurs="0"/>
+<xs:element name="stradaMultiCap" type="xs:string" minOccurs="0"/>
+<xs:element name="toponimo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
