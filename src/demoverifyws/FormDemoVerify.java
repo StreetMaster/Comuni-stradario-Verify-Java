@@ -1,4 +1,4 @@
-package demosuggestws;
+package demoverifyws;
 
 import java.awt.SystemColor;
 import streetmaster.verifyws.*;
@@ -15,14 +15,14 @@ import streetmaster.verifyws.*;
   * 2016 - Software by StreetMaster (c)
   */
 
-public class FormDemoSuggest extends javax.swing.JFrame {
+public class FormDemoVerify extends javax.swing.JFrame {
 
     private int curCand=0;
     private TotOutVerify totOut=null;
     /**
-     * Creates new form DemoSuggest
+     * Creates new form DemoVerify
      */
-    public FormDemoSuggest() {
+    public FormDemoVerify() {
         initComponents();
         this.getContentPane().setBackground(SystemColor.info);
     }
@@ -294,7 +294,7 @@ public class FormDemoSuggest extends javax.swing.JFrame {
 
         jLabel14.setBackground(java.awt.SystemColor.info);
         jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Sviluppo\\RepositoryDemo\\VerifyFreeRest_ASPNET\\VerifyFreeRest_ASPNET\\images\\logo-street-master.png")); // NOI18N
-        jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -415,20 +415,22 @@ public class FormDemoSuggest extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormDemoSuggest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDemoVerify.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormDemoSuggest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDemoVerify.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormDemoSuggest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDemoVerify.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormDemoSuggest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDemoVerify.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new FormDemoSuggest().setVisible(true);
+            new FormDemoVerify().setVisible(true);
         });
     }
 
