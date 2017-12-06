@@ -1,6 +1,6 @@
 # Comuni italiani e stradario. Webservice di verifica e correzione.
-## Demo Verify Java
-Comuni italiani e stradario. Demo Java per l'utilizzo del ws soap VERIFY  di verifica e correzione. Gratuito per le prime 250 chiamate mensili.
+## Verify Java
+Comuni italiani e stradario. Soluzione Java per l'utilizzo del ws soap VERIFY  di verifica e correzione. Gratuito per le prime 250 chiamate mensili.
 
 ### Ambiente di sviluppo
   - NetBeans IDE 8.1
