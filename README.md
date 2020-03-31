@@ -8,7 +8,7 @@ Comuni italiani e stradario. Soluzione Java per l'utilizzo del ws soap VERIFY  d
 
 ### Endpoint
 ```
-     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smws/verify?wsdl
+     https://streetmaster.streetmaster.it/smws/verify?wsdl
 ```
 
 ### Key
