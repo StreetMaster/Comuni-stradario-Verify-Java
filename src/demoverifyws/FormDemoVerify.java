@@ -8,11 +8,11 @@ import streetmaster.verifyws.*;
   * Esempio di utilizzo del servizio WS VERIFY per la verifica e la normalizzazione degli indirizzi italiani realizzato da StreetMaster Italia
   * 
   * L'end point del servizio è 
-  *     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smws/verify?wsdl
+  *     https://streetmaster.streetmaster.it/smws/verify?wsdl
   *     
   * Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
   * 
-  * 2016 - Software by StreetMaster (c)
+  * 2020 - Software by StreetMaster (c)
   */
 
 public class FormDemoVerify extends javax.swing.JFrame {
